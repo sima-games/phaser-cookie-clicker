@@ -2,16 +2,13 @@ import Phaser from 'phaser';
 import cookieImage from './assets/cookie.png';
 import fullscreenImage from './assets/fullscreen.png';
 
-const ratio = 9 / 16;
-const VIRTUAL_WIDTH = 450;
-const VIRTUAL_HEIGHT = 800;
-const DEFAULT_WIDTH = ratio * VIRTUAL_WIDTH;
-const DEFAULT_HEIGHT = VIRTUAL_HEIGHT;
+const VIRTUAL_WIDTH = 540;
+const VIRTUAL_HEIGHT = 960;
 
 const config = {
   type: Phaser.AUTO,
-  width: DEFAULT_WIDTH,
-  height: DEFAULT_HEIGHT,
+  width: VIRTUAL_WIDTH,
+  height: VIRTUAL_HEIGHT,
   banner: false,
   orientation: 'portrait',
   disableContextMenu: true,
