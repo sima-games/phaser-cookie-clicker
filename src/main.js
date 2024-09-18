@@ -11,10 +11,10 @@ const config = {
   width: DEFAULT_WIDTH,
   height: DEFAULT_HEIGHT,
   banner: false,
-  antialias: false,
   orientation: 'portrait',
   disableContextMenu: true,
   autoMobilePipeline: true,
+  antialias: true,
   scale: {
     mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
@@ -84,7 +84,7 @@ function preload() {
 function create() {
   const fullscreenButton = this.add
     .image(this.scale.width - 44, 44, 'fullscreen')
-    .setScale(7)
+    .setScale(0.1)
     .setInteractive()
     .setScrollFactor(0)
     .setDepth(100);
