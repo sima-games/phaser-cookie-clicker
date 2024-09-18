@@ -3,8 +3,10 @@ import cookieImage from './assets/cookie.png';
 import fullscreenImage from './assets/fullscreen.png';
 
 const ratio = 9 / 16;
-const DEFAULT_WIDTH = ratio * window.innerWidth;
-const DEFAULT_HEIGHT = window.innerHeight;
+const VIRTUAL_WIDTH = 450;
+const VIRTUAL_HEIGHT = 800;
+const DEFAULT_WIDTH = ratio * VIRTUAL_WIDTH;
+const DEFAULT_HEIGHT = VIRTUAL_HEIGHT;
 
 const config = {
   type: Phaser.AUTO,
